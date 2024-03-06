@@ -17,3 +17,6 @@ def face():
     result = DeepFace.analyze(image, actions=["age", "gender", "race"])
     # return the result as JSON
     return jsonify(result)
+
+if __name__ == '__main__':
+    app.run()
